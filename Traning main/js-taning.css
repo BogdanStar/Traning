@@ -1,0 +1,124 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: 'Roboto Medium';
+   src: url('./fonts/Roboto-Medium.woff') format('woff');
+   font-display: swap;
+   font-weight: 500;
+   font-style: normal;
+   }
+
+ @font-face {
+      font-family: 'Roboto Regular';
+      src: url('./fonts/Roboto-Regular.woff') format('woff');
+      font-display: swap;
+      font-weight: 400;
+      font-style: normal;
+ } 
+
+
+.logo {
+   display: flex;
+   align-items: center;
+   background-color: #090808;
+   max-width: 1920px;
+   height: 80px;
+   margin: 0 auto; 
+}
+
+.logo svg{
+   padding-left: 32px;
+}
+
+.main{
+   display: flex;
+   max-width: 1600px;
+   min-height: 840px;
+   padding-top: 80px;
+   padding-left: 160px;
+   justify-content: space-between;
+}
+
+.main-Title{
+   font-family: 'Roboto Medium';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 72px;
+   line-height: 84px;
+}
+
+.main p{
+   font-family: 'Roboto Regular';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 38px;
+}
+
+.main-Text{
+   padding-bottom: 58px;
+}
+
+.main-Form{
+   display: flex;
+   box-sizing: border-box;
+   border: 1px solid #000000;
+   width: 400px;
+   height: 278px;
+}
+
+.form{
+   padding-left: 16px;
+   padding-top: 32px;
+}
+
+.main-form_title{
+   display: flex;
+   font-size: 16px;
+   line-height: 19px;
+}
+
+.input-area{
+   margin-bottom: 16px;
+   width: 368px;
+   height: 48px;
+   border: 1px solid #000000;
+}
+
+.btn {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   width: 368px;
+   height: 48px;
+   color: #fff;
+   background-color: #000000;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.footer {
+   display: flex;
+   align-items: flex-end;
+}
+
+.logo-footer {
+   display: flex;
+   align-items: center;
+   background-color: #737373;
+   max-width: 1920px;
+   height: 160px;
+   margin: 0 auto; 
+   
+}
+
+.logo-footer svg{
+   padding-left: 32px;
+}
