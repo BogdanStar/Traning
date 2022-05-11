@@ -2,30 +2,36 @@
 
 const form = document.querySelector(".js-form");
 const output = document.querySelector(".output");
+var numError = document.querySelector(".numError");
+var textError = document.querySelector(".textError");
 
 const data = [];
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   let number = +this.elements["number"].value;
+  
    if(!number){
-      alert("Введите число")
+      numError.innerHTML = "введите число";
       return
    }
-   if (number<1){
-      alert ("Введите целое положительное число")
+   else if (number<1){
+      numError.innerHTML = "введите целое положительное число";
       return
+   }
+   else{
+      numError.innerHTML = ""; 
    }
   let content = this.elements["content"].value;
    if(content === ""){
-      alert("Введите данные")
+      textError.innerHTML = "введите данные";
       return
    }
     let index = null;
     for (let i = 0; i < data.length; i++){
        if (data[i].number === number){
           index = String(i);
-          alert("Нельзя использовать то же число")
+          textError.innerHTML = "такое число уже использованно";
           break;
       } 
     }
@@ -41,4 +47,5 @@ function dataCreator() {
     return `<div>${note.number}) ${note.content}</div>`;
   });
   output.innerHTML = list.join("");
+  textError.innerHTML = "";
 }

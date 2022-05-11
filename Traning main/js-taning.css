@@ -71,31 +71,45 @@
    word-wrap: break-word;
 }
 
-.main--text{
+.main__text{
    padding-bottom: 58px;
 }
 
-.main--form{
+.main__form{
    display: flex;
    box-sizing: border-box;
    border: 1px solid #000000;
-   width: 400px;
-   height: 278px;
+   width: 400px; 
+   margin-bottom: 402px;
 }
 
 .form{
    padding-left: 16px;
    padding-top: 32px;
+   padding-bottom: 32px;
 }
 
-.main--form__title{
+.main__form--title{
    display: flex;
    font-size: 16px;
    line-height: 19px;
 }
 
-.input--area{
+.numError{
+    display: block;
+    color: red;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.textError{
+   display: block;
+   color: red;
+   font-size: 13px;
    margin-bottom: 16px;
+}
+
+.input__area{
    width: 368px;
    height: 48px;
    border: 1px solid #000000;
@@ -112,6 +126,7 @@
    background-color: #000000;
    align-items: center;
    cursor: pointer;
+   
 }
 
 .footer {
@@ -119,7 +134,7 @@
    align-items: flex-end;
 }
 
-.logo--footer {
+.logo__footer {
    display: flex;
    align-items: center;
    background-color: #737373;
@@ -128,6 +143,6 @@
    margin: 0 auto;    
 }
 
-.logo--footer svg{
+.logo__footer svg{
    padding-left: 32px;
 }

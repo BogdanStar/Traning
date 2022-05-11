@@ -32,25 +32,31 @@
    </header>
    <h1 class="title">Приветствую!</h1>
    <main class="main">
-      <div class="main--container">
-         <p class="main--text">Давай обновим список и начнем обучение</p>
-         <p class="main--list">Список:</p>
+      <div class="main__container">
+         <p class="main__text">Давай обновим список и начнем обучение</p>
+         <p class="main__list">Список:</p>
          <p class="output"></p>
       </div>
       
-      <div class="main--form" >
+      <div class="main__form" >
          <form class="form js-form">
-               <span class="main--form__title">Номер записи</span>
-					<input type="text" id="number" class="input--area inputArea" type="text">
-               <span class="main--form__title">Название записи</span>
-					<input type="text" id="content" class="input--area inputArea" type="text">  
+            <label>
+               <span class="main__form--title">Номер записи</span>
+					<input type="text" id="number" class="input__area inputArea" type="text" >
+               <span class="numError"></span>
+            </label>
+            <label>
+               <span class="main__form--title">Название записи</span>
+					<input type="text" id="content" class="input__area inputArea" type="text" >
+               <span class="textError"></span>  
+            </label>   
                <button type="submit" class="btn">Добавить в список</button>    
          </form>
       </div>
    </main>
 
    <footer>
-      <div class="logo--footer">
+      <div class="logo__footer">
          <svg width="155" height="64" viewBox="0 0 155 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 10.6656H9.14219V53.3368H0V10.6656Z" fill="white"/>
             <path d="M16.7221 10.6656H35.6167C44.7589 10.6656 50.5493 16.456 50.5493 24.9903C50.5493 34.7404 43.2356 37.4842 43.2356 37.4842L52.0773 53.3322H42.0174L34.3985 39.3127H25.8643V53.3322H16.7221V10.6656ZM35.3047 30.7807C38.6565 30.7807 41.0951 28.342 41.0951 24.9903C41.0951 21.6385 38.6565 19.1998 35.3047 19.1998H25.8643V30.7807H35.3047Z" fill="white"/>
