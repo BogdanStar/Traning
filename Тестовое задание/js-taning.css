@@ -29,11 +29,11 @@ body {
 .header {
   background-color: #090808;
   height: 80px;
+  align-items: center;
+  display: flex;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
   padding-left: 32px;
 }
 
@@ -126,6 +126,6 @@ body {
 .footer {
   background-color: #737373;
   height: 160px;
+  align-items: center;
   display: flex;
-  align-items: flex-end;
 }
