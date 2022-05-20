@@ -40,7 +40,7 @@ function dataCreator() {
 }
 
 function isValidNumber(number) {
-  if (isNaN(number) || !number) {
+  if (!number) {
     return (numberError.style.display = "block");
   } else if (number < 1) {
     return (numberError.style.display = "block");
